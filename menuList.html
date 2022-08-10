@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambike Lounge</title>
+    <link rel="stylesheet" href="./css/menu-list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="sp-list-container">
+      <div class="sp-list-menu-container">
+        <!-- Logo -->
+        <div class="sp-image-logo-container">
+          <img src="./images/tambike-logo.png" class="image-logo" />
+        </div>
+        <!-- Logo end -->
+
+        <!-- Menu list -->
+        <div class="sp-menu-list-container">
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/home.svg" class="sp-home-icon" />
+            <span
+              class="sp-menu-item-text -home-text"
+              onclick="location.href = `/index.html`"
+              >HOME</span
+            >
+          </div>
+          <hr />
+          <div class="sp-menu-item-container">
+            <div class="sp-menu-item-text-container">
+              <img src="./images/plus.svg" class="sp-plus-icon" />
+              <img src="./images/minus.svg" class="sp-minus-icon" />
+              <span
+                class="sp-menu-item-text"
+                onclick="handleMenuTextClick('.ma-sp-menu-container')"
+                >MOTORCYCLE ACCESSORIES</span
+              >
+            </div>
+            <div class="ma-sp-menu-container">
+              <dl class="sp-menu-dl-container">
+                <dt
+                  class="sp-menu-dt-text"
+                  onclick="handleMenuSubTextClick('.suzuki-type')"
+                >
+                  <div class="sp-menu-dt-text-and-icon-container">
+                    <span>Suzuki</span>
+                    <img src="./images/arrow-down.svg" class="sp-arrow-down" />
+                  </div>
+                </dt>
+                <div class="suzuki-type">
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Suzuki GSX-S 150')"
+                  >
+                    Suzuki GSX-S 150
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Suzuki GSX-R 150')"
+                  >
+                    Suzuki GSX-R 150
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Suzuki SV 650')"
+                  >
+                    Suzuki SV 650
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Suzuki GSX-S 1000')"
+                  >
+                    Suzuki GSX-S 1000
+                  </dd>
+                </div>
+                <dt
+                  class="sp-menu-dt-text"
+                  onclick="handleMenuSubTextClick('.yamaha-type')"
+                >
+                  <div class="sp-menu-dt-text-and-icon-container">
+                    <span>Yamaha</span>
+                    <img src="./images/arrow-down.svg" class="sp-arrow-down" />
+                  </div>
+                </dt>
+                <div class="yamaha-type">
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha Aerox 115')"
+                  >
+                    Yamaha Aerox 115
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha Aerox V2')"
+                  >
+                    Yamaha Aerox V2
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha NMAX 155')"
+                  >
+                    Yamaha NMAX 155
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha NMAX 2020')"
+                  >
+                    Yamaha NMAX 2020
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha Sniper 150 & 155')"
+                  >
+                    Yamaha Sniper 150 & 155
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('YAMAHA XSR 155')"
+                  >
+                    YAMAHA XSR 155
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha R15 V3/V4')"
+                  >
+                    Yamaha R15 V3/V4
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha MT15')"
+                  >
+                    Yamaha MT15
+                  </dd>
+                  <dd
+                    class="sp-menu-dd-text"
+                    onclick="handleMenuItemClick('Yamaha TFX 150')"
+                  >
+                    Yamaha TFX 150
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">CVT PERFORMANCE</span>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">MUFFLERS</span>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">VILLAIN</span>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">AUXILLIARY LIGHTS</span>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">SHOCK ABSORBER</span>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">RIDER PERIPHERALS</span>
+          </div>
+          <hr />
+          <div class="sp-menu-item-text-container">
+            <img src="./images/plus.svg" class="sp-plus-icon" />
+            <span class="sp-menu-item-text">LATEST ITEMS</span>
+          </div>
+          <hr />
+        </div>
+        <!-- Menu list end-->
+      </div>
+
+      <!-- Second Column -->
+      <div class="sp-display-product-container">
+        <div class="sp-grey-color-container"></div>
+        <div class="sp-item-name-container">
+          <span class="sp-selected-item-name-text" id="selected-item"></span>
+        </div>
+
+        <!-- Item container -->
+        <div class="sp-list-of-item-container">
+          <div class="sp-items-container">
+            <!-- Item -->
+            <div class="sp-item-container">
+              <div class="sp-item-image-container">
+                <img src="./images/item-image.svg" class="sp-image" />
+              </div>
+              <div class="sp-details-container">
+                <span class="sp-item-name -bold">Item name</span>
+                <span class="sp-item-description">Item description</span>
+                <span class="sp-item-amount -bold">Item amount</span>
+              </div>
+            </div>
+            <!-- Item end -->
+
+            <!-- Item -->
+            <div class="sp-item-container">
+              <div class="sp-item-image-container">
+                <img src="./images/item-image.svg" class="sp-image" />
+              </div>
+              <div class="sp-details-container">
+                <span class="sp-item-name -bold">Item name</span>
+                <span class="sp-item-description">Item description</span>
+                <span class="sp-item-amount -bold">Item amount</span>
+              </div>
+            </div>
+            <!-- Item end -->
+
+            <!-- Item -->
+            <div class="sp-item-container">
+              <div class="sp-item-image-container">
+                <img src="./images/item-image.svg" class="sp-image" />
+              </div>
+              <div class="sp-details-container">
+                <span class="sp-item-name -bold">Item name</span>
+                <span class="sp-item-description">Item description</span>
+                <span class="sp-item-amount -bold">Item amount</span>
+              </div>
+            </div>
+            <!-- Item end -->
+
+            <!-- Item -->
+            <div class="sp-item-container">
+              <div class="sp-item-image-container">
+                <img src="./images/item-image.svg" class="sp-image" />
+              </div>
+              <div class="sp-details-container">
+                <span class="sp-item-name -bold">Item name</span>
+                <span class="sp-item-description">Item description</span>
+                <span class="sp-item-amount -bold">Item amount</span>
+              </div>
+            </div>
+            <!-- Item end -->
+
+            <!-- Item -->
+            <div class="sp-item-container">
+              <div class="sp-item-image-container">
+                <img src="./images/item-image.svg" class="sp-image" />
+              </div>
+              <div class="sp-details-container">
+                <span class="sp-item-name -bold">Item name</span>
+                <span class="sp-item-description">Item description</span>
+                <span class="sp-item-amount -bold">Item amount</span>
+              </div>
+            </div>
+            <!-- Item end -->
+
+            <!-- Item -->
+            <div class="sp-item-container">
+              <div class="sp-item-image-container">
+                <img src="./images/item-image.svg" class="sp-image" />
+              </div>
+              <div class="sp-details-container">
+                <span class="sp-item-name -bold">Item name</span>
+                <span class="sp-item-description">Item description</span>
+                <span class="sp-item-amount -bold">Item amount</span>
+              </div>
+            </div>
+            <!-- Item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-icon-container">
+        <i class="fa-brands fa-facebook footer-icon -pointer"></i>
+        <i class="fa-brands fa-twitter footer-icon -pointer"></i>
+        <i class="fa-brands fa-instagram footer-icon -pointer"></i>
+        <i class="fa-brands fa-pinterest footer-icon -pointer"></i>
+        <i class="fa-brands fa-youtube footer-icon -pointer"></i>
+        <i class="fa-brands fa-linkedin footer-icon -pointer"></i>
+      </div>
+      <div class="footer-text-container">
+        <p>
+          © 2022 Tambike Lounge. All information contained herein applies to
+          Philippines product only.
+        </p>
+        <p>
+          Vehicle Data Privacy | Privacy Policy | Do Not Sell My Personal
+          Information | Legal Terms and Conditions
+        </p>
+        <p>
+          We use cookies to improve your experience on this site and show you
+          personnalized advertising. To find out more, read our cookie policy.
+        </p>
+        <p class="footer-site-text">
+          <span class="blue-text -pointer">Site Map</span> |
+          <span class="blue-text -pointer">Tambike Lounge</span> |
+          <span class="blue-text -pointer">Contact Us</span>
+        </p>
+        <br />
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <script src="./js/menuListScript.js"></script>
+    <!-- <script>
+      var selectedItemValue = localStorage.getItem("selectedItem");
+      document.getElementById("selected-item").innerHTML = selectedItemValue;
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambike Lounge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header-container">
+      <!-- Menu -->
+      <div class="menu-container -pointer" onclick="handleMenuClick(this)">
+        <div class="menu-bar-container">
+          <div class="menu-bar-1"></div>
+          <div class="menu-bar-2"></div>
+          <div class="menu-bar-3"></div>
+        </div>
+        <p class="header-text">MENU</p>
+      </div>
+      <!-- Logo -->
+      <div class="image-logo-container">
+        <img src="./images/tambike-logo.png" class="image-logo" />
+      </div>
+      <!-- About-us -->
+      <p class="header-text -pointer">About us</p>
+    </div>
+    <!-- Header end -->
+
+    <!-- Content -->
+    <div class="content-container">
+      <!-- Menu list -->
+      <div class="content-menu-list-container">
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/home.svg" class="home-icon" />
+          <span class="content-menu-item-text -home-text">HOME</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-container">
+          <div class="content-menu-item-text-container">
+            <img src="./images/plus.svg" class="plus-icon" />
+            <img src="./images/minus.svg" class="minus-icon" />
+            <span
+              class="content-menu-item-text"
+              onclick="handleMenuTextClick('.ma-content-menu-container')"
+              >MOTORCYCLE ACCESSORIES</span
+            >
+          </div>
+          <div class="ma-content-menu-container">
+            <dl class="content-menu-dl-container">
+              <dt
+                class="content-menu-dt-text"
+                onclick="handleMenuSubTextClick('.suzuki-type')"
+              >
+                <div class="menu-dt-text-and-icon-container">
+                  <span>Suzuki</span>
+                  <img src="./images/arrow-down.svg" class="arrow-down" />
+                </div>
+              </dt>
+              <div class="suzuki-type">
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Suzuki GSX-S 150')"
+                >
+                  Suzuki GSX-S 150
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Suzuki GSX-R 150')"
+                >
+                  Suzuki GSX-R 150
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Suzuki SV 650')"
+                >
+                  Suzuki SV 650
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Suzuki GSX-S 1000')"
+                >
+                  Suzuki GSX-S 1000
+                </dd>
+              </div>
+              <dt
+                class="content-menu-dt-text"
+                onclick="handleMenuSubTextClick('.yamaha-type')"
+              >
+                <div class="menu-dt-text-and-icon-container">
+                  <span>Yamaha</span>
+                  <img src="./images/arrow-down.svg" class="arrow-down" />
+                </div>
+              </dt>
+              <div class="yamaha-type">
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha Aerox 115')"
+                >
+                  Yamaha Aerox 115
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha Aerox V2')"
+                >
+                  Yamaha Aerox V2
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha NMAX 155')"
+                >
+                  Yamaha NMAX 155
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha NMAX 2020')"
+                >
+                  Yamaha NMAX 2020
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha Sniper 150 & 155')"
+                >
+                  Yamaha Sniper 150 & 155
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('YAMAHA XSR 155')"
+                >
+                  YAMAHA XSR 155
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha R15 V3/V4')"
+                >
+                  Yamaha R15 V3/V4
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha MT15')"
+                >
+                  Yamaha MT15
+                </dd>
+                <dd
+                  class="content-menu-dd-text"
+                  onclick="handleGoToNextPageClick('Yamaha TFX 150')"
+                >
+                  Yamaha TFX 150
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">CVT PERFORMANCE</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">MUFFLERS</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">VILLAIN</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">AUXILLIARY LIGHTS</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">SHOCK ABSORBER</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">RIDER PERIPHERALS</span>
+        </div>
+        <hr />
+        <div class="content-menu-item-text-container">
+          <img src="./images/plus.svg" class="plus-icon" />
+          <span class="content-menu-item-text">LATEST ITEMS</span>
+        </div>
+        <hr />
+      </div>
+      <!-- Menu list end -->
+      <!-- Carousel -->
+      <div class="carousel-and-dot-container">
+        <div class="carousel-container">
+          <div class="image-container fade">
+            <img src="./images/image1.png" class="carousel-image" />
+          </div>
+
+          <div class="image-container fade">
+            <img src="./images/image2.png" class="carousel-image" />
+          </div>
+
+          <div class="image-container fade">
+            <img src="./images/image3.png" class="carousel-image" />
+          </div>
+
+          <a class="prev" onclick="handleCarouselArrowClick(-1)">❮</a>
+          <a class="next" onclick="handleCarouselArrowClick(1)">❯</a>
+        </div>
+        <div class="carousel-dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <!-- Carousel end -->
+    </div>
+    <!-- Content end -->
+
+    <!-- Our company -->
+    <div class="our-company-container">
+      <p class="our-company-text">OUR COMPANY</p>
+      <div class="our-company-images-container">
+        <div class="company-image"></div>
+        <div class="company-image"></div>
+        <div class="company-image"></div>
+      </div>
+    </div>
+    <!-- Our company end -->
+
+    <!-- Footer -->
+    <footer style="margin-top: 50px">
+      <div class="footer-brands-and-about-us-text-container">
+        <p class="footer-our-brand-text -pointer">OUR BRANDS</p>
+        <p class="footer-about-us-text -pointer">ABOUT US</p>
+      </div>
+      <div class="footer-icon-container">
+        <i class="fa-brands fa-facebook footer-icon -pointer"></i>
+        <i class="fa-brands fa-twitter footer-icon -pointer"></i>
+        <i class="fa-brands fa-instagram footer-icon -pointer"></i>
+        <i class="fa-brands fa-pinterest footer-icon -pointer"></i>
+        <i class="fa-brands fa-youtube footer-icon -pointer"></i>
+        <i class="fa-brands fa-linkedin footer-icon -pointer"></i>
+      </div>
+      <div class="footer-text-container">
+        <p>
+          © 2022 Tambike Lounge. All information contained herein applies to
+          Philippines product only.
+        </p>
+        <p>
+          Vehicle Data Privacy | Privacy Policy | Do Not Sell My Personal
+          Information | Legal Terms and Conditions
+        </p>
+        <p>
+          We use cookies to improve your experience on this site and show you
+          personnalized advertising. To find out more, read our cookie policy.
+        </p>
+        <p class="footer-site-text">
+          <span class="blue-text -pointer">Site Map</span> |
+          <span class="blue-text -pointer">Tambike Lounge</span> |
+          <span class="blue-text -pointer">Contact Us</span>
+        </p>
+        <br />
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
